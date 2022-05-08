@@ -1,0 +1,36 @@
+class Solution {
+public:
+    bool dfs(int v,vector<int>graph[],vector<bool>&vis,vector<bool>&in_vis)
+    {
+        vis[v]=1;
+        in_vis[v]=1;
+        for(auto it:graph[v])
+        {
+            if(!vis[it])
+            {
+                if(dfs(it,graph,vis,in_vis))
+                    return true;
+            }
+            else if(in_vis[it])
+                return true;
+        }
+        in_vis[v]=0;
+        return false;
+    }
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        int n=prerequisites.size();
+        // vector<vector<int>>graph(numCourses);
+        vector<int>graph[numCourses];
+        for(int i=0;i<n;i++)
+            graph[prerequisites[i][0]].push_back(prerequisites[i][1]);
+        vector<bool>vis(numCourses,0);
+        vector<bool>in_vis(numCourses,0);
+        for(int i=0;i<numCourses;i++)
+        {
+            if(!vis[i])
+                if(dfs(i,graph,vis,in_vis))
+                    return false;
+        }
+        return true;
+    }
+};
