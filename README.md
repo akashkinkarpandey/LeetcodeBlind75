@@ -9,7 +9,7 @@
 [Leetcode Blind 75 with difficulty level](https://leetcode.com/discuss/general-discussion/522206/blind-curated-75-list-with-difficulty-level "Blind 75 with difficulty level")
 ***
 
-* ## `__Neetcode's site__` with  blind 75+ *more 75 qs*
+* ## *Neetcode's site* with  blind 75+ *more 75 qs*
     ### 150 qs in total
 [Neetcode.io](https://neetcode.io/ "Neetcode")<br>
 [Spreadsheet for blind 75 by Neetcode Youtube channel](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0 "Spreadsheet")
