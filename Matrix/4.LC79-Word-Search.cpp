@@ -1,3 +1,7 @@
+/*
+Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+Output: true
+    */
 class Solution {
 public:
     int r,c;
@@ -20,7 +24,7 @@ public:
         char character=board[i][j];//storing char for making matrix original while backtracking
         board[i][j]='.';//marking a cell as visited
         // bool ans=false;
-        for(auto &it:dir)//putiing &infront of it is mandatory to avoid TLE
+        for(auto &it:dir)//puting & infront of it is mandatory to avoid TLE
         {
           
             if(dfs(i+it[0],j+it[1],board,word,count+1))
